@@ -45,6 +45,17 @@ a:hover {
     border: 1px solid #c1c1c1;
     padding: 10px;
     border-bottom: 3px solid #88c8d2;
+
+    @include transition(background, 0.5s, ease);
+    /*@include transition(color, 0.2s, ease);*/
+    /*@include transition(border, 0.2s, ease);*/
+
+
+    &:hover {
+        background: #88c8d2;
+        color: white;
+        border: 1px solid darken(#88c8d2, 5%);
+    }
 }
 
 ._projects--member {

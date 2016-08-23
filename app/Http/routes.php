@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
+});
+
+Route::get('team', function() {
+    return view('team');
 });
 
 Route::get('projects', function() {
@@ -24,5 +28,5 @@ Route::get('projects/{id}', function($id) {
 });
 
 Route::get('task/{id}', function($id) {
-    return view('task', ['name' => 'signar']);
+    return view('task', ['name' => $id]);
 });

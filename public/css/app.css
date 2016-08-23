@@ -25,7 +25,17 @@ a:hover {
 ._projects--project-wrapper {
   border: 1px solid #c1c1c1;
   padding: 10px;
-  border-bottom: 3px solid #88c8d2; }
+  border-bottom: 3px solid #88c8d2;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  /*@include transition(color, 0.2s, ease);*/
+  /*@include transition(border, 0.2s, ease);*/ }
+  ._projects--project-wrapper:hover {
+    background: #88c8d2;
+    color: white;
+    border: 1px solid #75bfcb; }
 
 ._projects--member {
   width: 25px;
