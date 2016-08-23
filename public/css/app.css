@@ -1,0 +1,155 @@
+a:hover {
+  text-decoration: none; }
+
+.container {
+  max-width: 100%; }
+
+/* Master */
+._master--container {
+  -webkit-transition: padding 0.5s ease;
+  -moz-transition: padding 0.5s ease;
+  -o-transition: padding 0.5s ease;
+  transition: padding 0.5s ease; }
+  .open + ._master--container {
+    padding-left: 300px; }
+
+._nav--icon-back {
+  display: none; }
+
+.open ._nav--icon-menu {
+  display: none; }
+.open ._nav--icon-back {
+  display: inline-block; }
+
+/* Projects */
+._projects--project-wrapper {
+  border: 1px solid #c1c1c1;
+  padding: 10px;
+  border-bottom: 3px solid #88c8d2; }
+
+._projects--member {
+  width: 25px;
+  height: 25px;
+  background: #ff0097;
+  margin-right: 5px;
+  float: left; }
+
+._projects--members {
+  overflow: hidden; }
+
+/* Project */
+._project--list {
+  background: #dadada;
+  padding: 10px;
+  border-radius: 2px; }
+
+._project--list-title {
+  font-size: 18px;
+  padding: 10px 0px; }
+
+._project--task {
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0 6px 10px -10px black;
+  margin-bottom: 10px; }
+
+._project--title {
+  color: #37a7de; }
+
+._project--add-task {
+  /*margin-top: 10px; */
+  width: 100%; }
+
+._project--add-task ._obj--table-cell {
+  vertical-align: top; }
+
+/* Task */
+._task--details {
+  background: #dedede;
+  border: 1px solid #c5c5c5;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0 6px 10px -10px black;
+  margin-bottom: 15px; }
+
+._task--comments {
+  background: #dedede;
+  border: 1px solid #c5c5c5;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0 6px 10px -10px black; }
+
+/* Nav */
+._nav--wrapper {
+  color: #fff; }
+
+._nav--topbar {
+  background: #40405f;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: #fff;
+  overflow: hidden; }
+
+._nav--toogle-btn {
+  padding: 5px;
+  display: inline-block;
+  border-radius: 2px; }
+  ._nav--toogle-btn:hover {
+    cursor: pointer;
+    background: #4a4a6e; }
+
+._nav--sidebar {
+  background: #40405f;
+  position: fixed;
+  top: 54px;
+  bottom: 0;
+  left: -300px;
+  width: 300px;
+  z-index: 99;
+  overflow-y: auto;
+  /*box-shadow: 0 0 10px black;    */
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /*transition: all 0.5s ease;*/ }
+  .open ._nav--sidebar {
+    left: 0; }
+
+._nav--cover {
+  position: relative; }
+
+._nav--cover-image img {
+  width: 100%; }
+
+._nav--cover-info {
+  position: absolute;
+  bottom: 0;
+  padding: 15px; }
+
+._nav--navitems {
+  /*padding: 15px;*/
+  overflow: auto; }
+
+._nav--navitem {
+  /*float: left;*/ }
+  ._nav--navitem a {
+    padding: 15px;
+    display: block; }
+    ._nav--navitem a:hover {
+      background: #4a4a6e; }
+  ._nav--navitem .icon {
+    padding-right: 7px; }
+
+._nav--navitem a {
+  color: #fff; }
+
+/* Objects */
+._obj--table {
+  display: table; }
+
+._obj--table-cell {
+  display: table-cell; }
+
+/*# sourceMappingURL=app.css.map */
